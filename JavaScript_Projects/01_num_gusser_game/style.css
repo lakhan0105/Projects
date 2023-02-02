@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  width: 70vw;
+  height: 100vh;
+  border: 1px solid;
+  margin: auto;
+  font-family: monospace;
+}
+
+.main-container {
+  background-color: rgb(40, 58, 58);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  /* padding: 1rem; */
+  color: white;
+}
+
+.upper-section .bottom-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* header section styling  */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.game-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7rem 0rem 1rem 0rem;
+}
+
+.game-title-el {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.result-el {
+  font-size: 2rem;
+  background-color: antiquewhite;
+  width: 2em;
+  text-align: center;
+  padding: 0.15em;
+  color: black;
+}
+
+/* BOTTOM SECTION STYLES */
+.bottom-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-input-field {
+  font-size: 1.7rem;
+  width: 5em;
+  height: 2.5em;
+  padding: 0.5em;
+  font-family: monospace;
+}
+
+.check-btn {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  padding: 0.15em;
+  font-family: monospace;
+}
+
+/* right conatiner */
+.right-container {
+  font-size: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

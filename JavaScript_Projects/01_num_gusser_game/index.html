@@ -5,11 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Number Guessing Game </title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
+    <div class="main-container">
+        <section class="upper-section">
+            <header>
+                <button class="btn again-btn">Again</button>
+                <p class="instruction">(between 1 and 20)</p>
+            </header>
+
+            <div class="game-title-container">
+                <h2 class="game-title-el">Guess My Number</h2>
+                <p class="result-el">?</p>
+            </div>
+        </section>
+
+        <section class="bottom-section">
+            <div class="left-container">
+                <input class="user-input-field" type="number">
+                <button class="btn check-btn">Check</button>
+            </div>
+            <div class="right-container">
+                <p class="game-result-info">Start Guessing...</p>
+
+                <div class="score-container">
+                    <p class="score-el">Score:</p>
+                    <p class="highscore-el">Last HighScore: ?</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- script file  -->
+    <script src="./script.js"></script>
 </body>
 
 </html>

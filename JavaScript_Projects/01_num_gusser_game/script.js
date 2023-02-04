@@ -1,4 +1,4 @@
-// Selecting the Elements 
+// Selecting the Elements
 const userInputFieldEl = document.querySelector(".user-input-field");
 const resultEl = document.querySelector(".result-el");
 const gameTitleEl = document.querySelector(".game-title-el");
@@ -6,6 +6,7 @@ const gameMessage = document.querySelector(".game-message");
 const scoreEl = document.querySelector(".score-el");
 const highScoreEl = document.querySelector(".highscore-el");
 const checkBtn = document.querySelector(".check-btn");
+const mainContainer = document.querySelector(".main-container");
 
 let randomNumber;
 let score = 20;
@@ -27,10 +28,11 @@ function checkFunc() {
   if (userInputFieldEl.value >= 0 && userInputFieldEl.value <= 20) {
     if (randomNumber == userInputFieldEl.value) {
       resultEl.textContent = randomNumber;
-      gameTitleEl.textContent = "Play Again, to Beat the HighScore";
+      gameTitleEl.textContent = "Press Again Button, to Play Again";
       updateMessage("Correct Answer!");
       updateHighScore();
       disableCheckBtn();
+      changeBackground();
     } else if (userInputFieldEl.value > randomNumber) {
       updateMessage("Too High!");
       updateScore();
@@ -60,6 +62,11 @@ function updateMessage(message) {
 function updateHighScore() {
   highScoreEl.textContent = "Last HighScore:" + score;
   previousHighScore = score;
+}
+
+// Function to change bg-color
+function changeBackground() {
+  mainContainer.style.backgroundColor = "green";
 }
 
 // Function for Play Again Button

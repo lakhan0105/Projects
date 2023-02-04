@@ -1,3 +1,4 @@
+// Selecting the Elements 
 const userInputFieldEl = document.querySelector(".user-input-field");
 const resultEl = document.querySelector(".result-el");
 const gameTitleEl = document.querySelector(".game-title-el");
@@ -10,6 +11,7 @@ let randomNumber;
 let score = 20;
 let highScore;
 let previousHighScore;
+
 scoreEl.textContent += score;
 
 // Function to generate Random Number
@@ -19,7 +21,6 @@ const genRandomNumber = function () {
 };
 genRandomNumber();
 console.log(genRandomNumber());
-// console.log(genRandomNumber());
 
 // Function to check Entered Input
 function checkFunc() {
@@ -44,13 +45,13 @@ function checkFunc() {
   }
 }
 
-// Function to calculate score
+// Function to update score
 function updateScore() {
   score--;
   scoreEl.textContent = "Score:" + score;
 }
 
-// Function to print message
+// Function to update the message
 function updateMessage(message) {
   return (gameMessage.textContent = message);
 }
@@ -75,6 +76,7 @@ function playAgain() {
   checkBtn.removeAttribute("disabled", "disabled");
 }
 
+// Function to disable the check button
 function disableCheckBtn() {
   checkBtn.setAttribute("disabled", "disabled");
 }

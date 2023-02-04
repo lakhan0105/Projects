@@ -23,30 +23,6 @@ const genRandomNumber = function () {
 genRandomNumber();
 console.log(genRandomNumber());
 
-// Function to check Entered Input
-function checkFunc() {
-  if (userInputFieldEl.value >= 0 && userInputFieldEl.value <= 20) {
-    if (randomNumber == userInputFieldEl.value) {
-      resultEl.textContent = randomNumber;
-      gameTitleEl.textContent = "Press Again Button, to Play Again";
-      updateMessage("Correct Answer!");
-      updateHighScore();
-      disableCheckBtn();
-      changeBackground();
-    } else if (userInputFieldEl.value > randomNumber) {
-      updateMessage("Too High!");
-      updateScore();
-      updateHighScore();
-    } else if (userInputFieldEl.value < randomNumber) {
-      updateMessage("Too Low!");
-      updateScore();
-      updateHighScore();
-    }
-  } else {
-    updateMessage("Invalid Input");
-  }
-}
-
 // Function to update score
 function updateScore() {
   score--;
@@ -65,8 +41,32 @@ function updateHighScore() {
 }
 
 // Function to change bg-color
-function changeBackground() {
-  mainContainer.style.backgroundColor = "green";
+function changeBackground(color) {
+  mainContainer.style.backgroundColor = color;
+}
+
+// Function to check Entered Input
+function checkFunc() {
+  if (userInputFieldEl.value >= 0 && userInputFieldEl.value <= 20) {
+    if (randomNumber == userInputFieldEl.value) {
+      resultEl.textContent = randomNumber;
+      gameTitleEl.textContent = "Press Again Button, to Play Again";
+      updateMessage("Correct Answer!");
+      updateHighScore();
+      disableCheckBtn();
+      changeBackground("green");
+    } else if (userInputFieldEl.value > randomNumber) {
+      updateMessage("Too High!");
+      updateScore();
+      updateHighScore();
+    } else if (userInputFieldEl.value < randomNumber) {
+      updateMessage("Too Low!");
+      updateScore();
+      updateHighScore();
+    }
+  } else {
+    updateMessage("Invalid Input");
+  }
 }
 
 // Function for Play Again Button
@@ -81,6 +81,7 @@ function playAgain() {
   gameTitleEl.textContent = "Guess My Number";
   userInputFieldEl.value = 0;
   checkBtn.removeAttribute("disabled", "disabled");
+  changeBackground("rgb(40, 58, 58)");
 }
 
 // Function to disable the check button

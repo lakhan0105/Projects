@@ -12,6 +12,20 @@
 <body>
     <main>
         <!-- PLAYER-1 ------------------------------------------------------------------>
+        <section class="player" id="player-0">
+            <!-- Player info -->
+            <div class="player-info" id="player-0-info">
+                <p class="player-label">Player 0 </p>
+                <p class="player-score" id="player-0-score">0</p>
+            </div>
+            <!-- Current Score -->
+            <div class="current-score-info">
+                <p class="current-score-label">Current</p>
+                <p class="current-score" id="player-0-current-score">0</p>
+            </div>
+        </section>
+
+        <!-- PLAYER-2 ------------------------------------------------------------------>
         <section class="player" id="player-1">
             <!-- Player info -->
             <div class="player-info" id="player-1-info">
@@ -25,25 +39,12 @@
             </div>
         </section>
 
-        <!-- PLAYER-2 ------------------------------------------------------------------>
-        <section class="player" id="player-2">
-            <!-- Player info -->
-            <div class="player-info" id="player-2-info">
-                <p class="player-label">Player 2 </p>
-                <p class="player-score" id="player-2-score">0</p>
-            </div>
-            <!-- Current Score -->
-            <div class="current-score-info">
-                <p class="current-score-label">Current</p>
-                <p class="current-score" id="player-2-current-score">0</p>
-            </div>
-        </section>
-
-        <!-- Overlay -->
+        <!-- Overlay ------------------------------------------------------------------->
         <section class="overlay">
             <div class="top-overlay">
                 <button class="btn new-game-btn">New Game</button>
-                <img src="./images/dice-1.png" alt="dice img not found" class="dice-img" width="100px ">
+                <img src="" alt="dice img not found" class="dice-img" width="100px ">
+                <span class="winner"></span>
             </div>
             <div class="bottom-overlay">
                 <button class="btn roll-dice-btn">Roll Dice</button>

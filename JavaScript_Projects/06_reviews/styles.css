@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+
+nav {
+  margin-bottom: 3.5em;
+}
+
+.usr-review-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 55vw;
+  /* height: 80vh; */
+  padding: 1em;
+  border-radius: 0.4em;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.171);
+}
+
+.usr-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 20em;
+  margin-bottom: 1em;
+}
+
+.usr-name {
+  margin-bottom: 0.35em;
+}
+
+.usr-job {
+  text-transform: uppercase;
+}
+.usr-review {
+  margin-bottom: 0.5em;
+  text-align: center;
+  padding: 1.5em;
+  line-height: 1.5em;
+  color: rgba(0, 0, 0, 0.548);
+}
+
+.btns-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  padding: 0.1em 0.5em;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 0.5em;
+}
+.btn:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+.nav-btns {
+  margin-bottom: 0.6em;
+}
+
+.surprise-btn {
+  text-transform: uppercase;
+  padding: 0.15em 1em;
+  background-color: white;
+  color: black;
+}
+
+.surprise-btn:hover {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  background-color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar-container {
+  position: fixed;
+  width: 25vw;
+  height: 100vh;
+  display: flex;
+  /* justify-content will not work cuz list r display:block */
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(53, 53, 53, 0.26);
+  padding-bottom: 1em;
+}
+
+li {
+  list-style-type: none;
+}
+
+.sidebar-header {
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0.5em;
+  /* border: 1px solid; */
+  width: 24vw;
+}
+
+.sidebar-links {
+  cursor: pointer;
+  line-height: 2.5em;
+  font-size: 1.5rem;
+  margin-bottom: 2em;
+}
+
+.sidebar-links li {
+  display: block;
+  padding: 0.2em 0.5em;
+}
+.sidebar-links li:hover {
+  background-color: whitesmoke;
+}
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+/* MAIN HAMBURGER ICON */
+.hamburger-icon {
+  position: fixed;
+  right: 1em;
+  top: 0.5em;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.sidebar-close-btn {
+  cursor: pointer;
+}
+
+/* CLASSES  */
+.hidden {
+  display: none;
+}

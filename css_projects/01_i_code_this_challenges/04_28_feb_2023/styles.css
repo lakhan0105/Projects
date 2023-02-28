@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #7ad9f7;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Container styling =========================================================*/
+.card-container {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Card styling ======================================================================*/
+.card {
+  min-width: 33vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 0.1em;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-1 {
+  position: absolute;
+  z-index: 100;
+  top: 0em;
+}
+
+.card-2 {
+  position: absolute;
+  width: 30.5vw;
+  z-index: 99;
+  top: -1em;
+}
+
+.card-3 {
+  position: absolute;
+  width: 29vw;
+  z-index: 98;
+  top: -2em;
+}
+
+/* Card Header styling ================================================================*/
+.card-header {
+  padding: 1.2em 1.5em;
+  display: flex;
+  gap: 1rem;
+  background-color: #f6fffa;
+  width: 100%;
+}
+
+/* action (Icons) styling */
+.action {
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #a2dd51;
+}
+
+.close-btn-container {
+  margin-left: auto;
+}
+
+.close-btn {
+  color: #000000;
+  font-weight: bolder;
+}
+
+/* Card content =======================================================================*/
+.card-content {
+  padding: 2.5em;
+  color: #909292;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Save Button ========================================================================*/
+.save-btn {
+  background-color: #a2dd51;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  font-size: 1.4rem;
+  padding: 0.5em 3.5em;
+  border-radius: 1em;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.save-btn:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* CLASSES =========================================================================*/
+.hidden {
+  display: none;
+}

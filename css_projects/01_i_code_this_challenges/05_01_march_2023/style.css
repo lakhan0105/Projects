@@ -86,3 +86,58 @@ img:hover {
   cursor: pointer;
 }
 
+.gallery-section {
+  position: relative;
+}
+
+/* MODAL STYLING */
+.modal-container {
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  right: 0em;
+  height: 100%;
+  border: 1px solid;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #03030396; */
+}
+
+/* modal img styling */
+.modal-img {
+  width: 50%;
+  box-shadow: 0px 0px 15px #000;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.overlay {
+  background-color: #22212183;
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  right: 0em;
+  height: 100%;
+  z-index: 98;
+}
+
+/* close btn inside the overlay  */
+.close-modal-btn {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.fa-xmark {
+  color: white;
+  font-size: 2rem;
+}
+
+/* CLASSES */
+.hidden {
+  display: none;
+}

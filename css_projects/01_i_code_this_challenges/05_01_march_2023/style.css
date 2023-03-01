@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2em 5em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR STYLING ==================================================================*/
+nav {
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+/* ul */
+.links-list {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+/* li */
+.links-list li {
+  list-style-type: none;
+  margin-left: 1.5em;
+}
+
+/* a */
+.link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.link:focus,
+.link:active {
+  border-bottom: 2px solid;
+  padding-bottom: 0.2em;
+}
+
+/* ACTIONS SECTION STYLING ===========================================================*/
+.actions {
+  display: flex;
+  margin-bottom: 3em;
+}
+
+.search-container {
+  margin-right: auto;
+  border-bottom: 0.1rem solid;
+  padding: 0em 1em;
+}
+
+.search-input {
+  border: none;
+  font-size: 1rem;
+  padding: 0.25em;
+}
+i {
+  font-size: 1.1rem;
+}
+/* Upload Button */
+.upload-btn {
+  border: none;
+  background-color: #000000;
+  color: white;
+  padding: 0.7em 3em;
+  border-radius: 0.3em;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.315);
+}
+
+/* IMAGES CONTAINER ====================================================================*/
+.images-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* border: 1px solid; */
+  gap: 1em;
+}
+
+img {
+  width: 100%;
+}
+
+img:hover {
+  cursor: pointer;
+}
+

@@ -1,9 +1,14 @@
-const hamburgerEl = document.querySelectorAll(".hamburger-icon");
-const answerEl = document.querySelectorAll(".answer");
+// Selecting the elements
+const buttonsEl = document.querySelectorAll(".buttons");
+const cardEl = document.querySelectorAll(".card");
 
-for (let i = 0; i < hamburgerEl.length; i++) {
-  hamburgerEl[i].addEventListener("click", function () {
-    console.log(hamburgerEl[i]);
-    answerEl[i].classList.toggle("hidden");
+// forEach button clicked, grab the parent el and toggle the shhow-text class
+buttonsEl.forEach(function (btn) {
+  btn.addEventListener("click", function (e) {
+    let parentEl = e.currentTarget.parentElement.parentElement;
+    parentEl.classList.toggle("show-text");
   });
-}
+});
+
+// DOUBTS
+// - cards are changing its position when expaneded and collapsed, how to fix it?
